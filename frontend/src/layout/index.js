@@ -272,7 +272,7 @@ const LoggedInLayout = ({ children }) => {
           >
             {greaterThenSm ? (
               <>
-                <p style={{color:"#FDFDFD"}}>Olá <b>{user.name}</b>, Seja bem-vindo.</p>
+                <p style={{color:"#FDFDFD"}}>Hola <b>{user.name}</b>, bienvenido.</p>
               </>
             ) : (
               user.name
