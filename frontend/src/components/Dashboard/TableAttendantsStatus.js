@@ -73,7 +73,7 @@ export default function TableAttendantsStatus(props) {
                 <TableHead>
                     <TableRow>
                         <TableCell>Nome</TableCell>
-                        <TableCell align="center">Avaliações</TableCell>
+                        <TableCell align="center">Evaluaciones</TableCell>
                         <TableCell align="center">T.M. de Atendimento</TableCell>
                         <TableCell align="center">Status (Atual)</TableCell>
                     </TableRow>
