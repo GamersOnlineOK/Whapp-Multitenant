@@ -199,7 +199,7 @@ const messages = {
 				},
 			},
 			ticketsQueueSelect: {
-				placeholder: "Linhas",
+				placeholder: "Grupos",
 			},
 			tickets: {
 				toasts: {
@@ -254,7 +254,7 @@ const messages = {
 					connections: "Conexiones",
 					tickets: "Tickets",
 					contacts: "Contactos",
-					queues: "Linhas",
+					queues: "Grupos",
 					administration: "Administración",
 					users: "Usuarios",
 					settings: "Configuración",
@@ -270,7 +270,7 @@ const messages = {
 				noTickets: "Sin notificaciones.",
 			},
 			queues: {
-				title: "Linhas",
+				title: "Grupos",
 				table: {
 					name: "Nombre",
 					color: "Color",
@@ -287,7 +287,7 @@ const messages = {
 				},
 			},
 			queueSelect: {
-				inputLabel: "Linhas",
+				inputLabel: "Grupos",
 			},
 			users: {
 				title: "Usuarios",
