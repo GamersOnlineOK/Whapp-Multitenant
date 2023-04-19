@@ -56,7 +56,11 @@ module.exports = {
       updatedAt: {
         type: DataTypes.DATE,
         allowNull: false
-      }
+      },
+      recorrency: {
+        type: DataTypes.TEXT,
+        allowNull: false
+      },
     });
   },
 
