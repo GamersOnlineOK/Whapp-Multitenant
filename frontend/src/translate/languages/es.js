@@ -4,8 +4,7 @@ const messages = {
 			signup: {
 				title: "Registro",
 				toasts: {
-					success:
-						"¡El usuario ha sido creado satisfactoriamente! ¡Ahora inicia sesión!",
+					success:"¡El usuario ha sido creado satisfactoriamente! ¡Ahora inicia sesión!",
 					fail: "Error creando el usuario. Verifica la data reportada.",
 				},
 				form: {
@@ -28,11 +27,22 @@ const messages = {
 					submit: "Ingresa",
 					register: "¿No tienes cuenta? ¡Regístrate!",
 				},
-			},
+			},// BUSCAR COMPANIES			
+			companies: {
+				title: "Registrar Empresa",
+				form: {
+				  name: "Nombre de Empresa",
+				  plan: "Paln",
+				  token: "Token",
+				  submit: "Registrar",
+				  success: "Empresa creada exitosamente!",
+				},
+			  },
 			auth: {
 				toasts: {
 					success: "¡Inicio de sesión exitoso!",
 				},
+				token:"Token",
 			},
 			dashboard: {
 				charts: {
@@ -118,10 +128,8 @@ const messages = {
 				confirmationModal: {
 					deleteTitle: "Borrar",
 					importTitlte: "Importar contactos",
-					deleteMessage:
-						"¿Estás seguro que deseas borrar este contacto? Todos los tickets relacionados se perderán.",
-					importMessage:
-						"¿Quieres importar todos los contactos desde tu teléfono?",
+					deleteMessage:"¿Estás seguro que deseas borrar este contacto? Todos los tickets relacionados se perderán.",
+					importMessage:"¿Quieres importar todos los contactos desde tu teléfono?",
 				},
 				buttons: {
 					import: "Importar Contactos",
@@ -165,6 +173,10 @@ const messages = {
 					name: "Nombre",
 					color: "Color",
 					greetingMessage: "Mensaje de saludo",
+					complationMessage: "Mensaje de finalización",
+					outOfHoursMessage: "Mensaje fuera de horario",
+					ratingMessage: "Mensaje de evaluación",
+					token: "Token",
 				},
 				buttons: {
 					okAdd: "Añadir",
@@ -189,10 +201,50 @@ const messages = {
 					cancel: "Cancelar",
 				},
 				success: "Usuario guardado satisfactoriamente.",
+			},			
+			scheduleModal: {
+				title: {
+				  add: "Agendar Nuevo",
+				  edit: "Editar",
+				},
+				form: {
+				  body: "Mensagem",
+				  contact: "Contato",
+				  sendAt: "Fecha de programacion",
+				  sentAt: "Fecha de Envio",
+				},
+				buttons: {
+				  okAdd: "Crear",
+				  okEdit: "Guardar",
+				  cancel: "Cancelar",
+				},
+				success: "Agregado con exito.",
+			},
+			tagModal: {
+			title: {
+				add: "Nueva Etiqueta",
+				edit: "Editar Etiqueta",
+			},
+			form: {
+				name: "Nombre",
+				color: "Color",
+			},
+			buttons: {
+				okAdd: "Crear",
+				okEdit: "Guardar",
+				cancel: "Cancelar",
+			},
+			success: "Etiqueta creada con exito.",
 			},
 			chat: {
 				noTicketMessage: "Selecciona un ticket para empezar a chatear.",
 			},
+			uploads: {
+				titles: {
+				  titleUploadMsgDragDrop: "ARRASTRAR Y SOLTAR ARCHIVOS EN EL CAMPO DE ABAJO",
+				  titleFileList: "Lista de archivo(s)"
+				},
+			  },
 			ticketsManager: {
 				buttons: {
 					newTicket: "Nuevo",
@@ -222,7 +274,9 @@ const messages = {
 			},
 			transferTicketModal: {
 				title: "Transferir Ticket",
-				fieldLabel: "Escriba para buscar usuarios",
+				fieldLabel: "Escriba para buscar usuarios",				
+				fieldQueueLabel: "Transferir al sector",
+				fieldQueuePlaceholder: "Selecione un Sector",
 				noOptions: "No se encontraron usuarios con ese nombre",
 				buttons: {
 					ok: "Transferir",
@@ -252,12 +306,21 @@ const messages = {
 				listItems: {
 					dashboard: "Dashboard",
 					connections: "Conexiones",
-					tickets: "Tickets",
+					tickets: "Tickets",					
+					quickMessages: "Respuestas Rapidas",
 					contacts: "Contactos",
 					queues: "Grupos",
+					tags: "Etiquetas",
 					administration: "Administración",
 					users: "Usuarios",
 					settings: "Configuración",
+					helps: "Ayuda",
+					messagesAPI: "API",
+					schedules: "Planeamiento",
+					campaigns: "Campañas",
+					annoucements: "Informativos",
+					chats: "Chat Interno",
+					financeiro: "Finanzas",
 				},
 				appBar: {
 					user: {
@@ -266,8 +329,204 @@ const messages = {
 					},
 				},
 			},
+			messagesAPI: {
+			  title: "API",
+			  textMessage: {
+				number: "Número",
+				body: "Mensaje",
+				token: "Token regitrado",
+			  },
+			  mediaMessage: {
+				number: "Número",
+				body: "Nombre de archivo",
+				media: "archivo",
+				token: "Token regitrado",
+			  },
+			},
 			notifications: {
 				noTickets: "Sin notificaciones.",
+			},
+			quickMessages: {
+				title: "Respuestas Rápidas",
+				buttons: {
+				  add: "Nueva Respuesta",
+				},
+				dialog: {
+				  shortcode: "Atajo",
+				  message: "Respuesta",
+				},
+			  },
+			contactLists: {
+			title: "Listas de Contactos",
+			table: {
+				name: "Nombre",
+				contacts: "Contacto",
+				actions: "Acciones",
+			},
+			buttons: {
+				add: "Nueva Lista",
+			},
+			dialog: {
+				name: "Nombre",
+				company: "Empresa",
+				okEdit: "Editar",
+				okAdd: "Agregar",
+				add: "Agregar",
+				edit: "Editar",
+				cancel: "Cancelar",
+			},
+			confirmationModal: {
+				deleteTitle: "Eliminar",
+				deleteMessage: "Esta accion no puede revertirse.",
+			},
+			toasts: {
+				deleted: "Registro Eliminado",
+			},
+			},
+			contactListItems: {
+			  title: "Contactos",
+			  searchPlaceholder: "Buscar",
+			  buttons: {
+				add: "Nuevo",
+				lists: "Listas",
+				import: "Importar",
+			  },
+			  dialog: {
+				name: "Nombre",
+				number: "Número",
+				whatsapp: "Whatsapp",
+				email: "E-mail",
+				okEdit: "Editar",
+				okAdd: "Agregar",
+				add: "Agregar",
+				edit: "Editar",
+				cancel: "Cancelar",
+			  },
+			  table: {
+				name: "Nombre",
+				number: "Número",
+				whatsapp: "Whatsapp",
+				email: "E-mail",
+				actions: "Acciones",
+			  },
+			  confirmationModal: {
+				deleteTitle: "Eliminar",
+				deleteMessage: "Esta accion no puede ser revertida.",
+				importMessage: "¿Desea importar contactos de este archivo? ",
+				importTitlte: "Importar",
+			  },
+			  toasts: {
+				deleted: "Registro Eliminado",
+			  },
+			},
+			campaigns: {
+			  title: "Campañas",
+			  searchPlaceholder: "Buscar",
+			  buttons: {
+				add: "Nueva Campaña",
+				contactLists: "Listas de Contactos",
+			  },
+			  table: {
+				name: "Nombre",
+				whatsapp: "Conexion",
+				contactList: "Lista de Contactos",
+				status: "Estado",
+				scheduledAt: "Agendado",
+				completedAt: "Terminado",
+				confirmation: "Confirmado",
+				actions: "Acciones",
+			  },
+			  dialog: {
+				new: "Nueva Campaña",
+				update: "Editar Campaña",
+				readonly: "Vista",
+				form: {
+				  name: "Nombre",
+				  message1: "Mensaje 1",
+				  message2: "Mensaje 2",
+				  message3: "Mensaje 3",
+				  message4: "Mensaje 4",
+				  message5: "Mensaje 5",
+				  confirmationMessage2: "Mensaje de Confirmacion 2",
+				  confirmationMessage1: "Mensaje de Confirmacion 1",
+				  confirmationMessage3: "Mensaje de Confirmacion 3",
+				  confirmationMessage4: "Mensaje de Confirmacion 4",
+				  confirmationMessage5: "Mensaje de Confirmacion 5",
+				  messagePlaceholder: "Contenido del Mensaje",
+				  whatsapp: "Conexión",
+				  status: "Estado",
+				  scheduledAt: "Agendado",
+				  confirmation: "Confirmado",
+				  contactList: "Lista de Contacto",
+				},
+				buttons: {
+				  add: "Agregar",
+				  edit: "Actualizar",
+				  okadd: "Ok",
+				  cancel: "Cancelar Envio",
+				  restart: "Reiniciar Envio",
+				  close: "Cerrar",
+				  attach: "Adjuntar Archivo",
+				},
+			  },
+			  confirmationModal: {
+				deleteTitle: "Eliminar",
+				deleteMessage: "Esta accion no se puede revertir.",
+			  },
+			  toasts: {
+				success: "Operacion realizada con Exito!",
+				cancel: "Campaña cancelada",
+				restart: "Campaña reiniciada",
+				deleted: "Registro Eliminado",
+			  },
+			},
+			announcements: {
+				title: "Tareas Pendientes",
+				searchPlaceholder: "Busqueda",
+				buttons: {
+				  add: "Nueva Tarea",
+				  contactLists: "Listas de Tareas",
+				},
+				table: {
+				  priority: "Prioridad",
+				  title: "Titulo",
+				  text: "Descripcion",
+				  mediaName: "Archivo",
+				  status: "Stado",
+				  actions: "Acciones",
+				},
+				dialog: {
+				  edit: "Editar Tarea",
+				  add: "Nueva Tarea",
+				  update: "Editar Tarea",
+				  readonly: "Vista",
+				  form: {
+					priority: "Prioridad",
+					title: "Titulo",
+					text: "Dscripcion",
+					mediaPath: "Archivo",
+					status: "Estado",
+				  },
+				  buttons: {
+					add: "Agregar",
+					edit: "Atualizar",
+					okadd: "Ok",
+					cancel: "Cancelar",
+					close: "Cerrar",
+					attach: "Adjuntar Archivo",
+				  },
+				},
+				confirmationModal: {
+				  deleteTitle: "Eliminar",
+				  deleteMessage: "ATENCIÓN: Esta accion no puede revertirse",
+				},
+				toasts: {
+				  success: "Operación realizada con exito",
+				  deleted: "Registro Eliminado",
+				},
+			},
+			campaignsConfig: {
+			title: "Configuracion de Campañas",
 			},
 			queues: {
 				title: "Grupos",
@@ -308,6 +567,49 @@ const messages = {
 					deleteMessage:
 						"Toda la información del usuario se perderá. Los tickets abiertos de los usuarios se moverán a la cola.",
 				},
+			},			
+			helps: {
+				title: "Centro de Ayuda",
+			},
+			schedules: {
+			title: "Horarios",
+			confirmationModal: {
+				deleteTitle: "¿Esta seguro de eliminar este Evento?",
+				deleteMessage: "ATENCIÓN: Esta áccion no puede ser revertida.",
+			},
+			table: {
+				contact: "Contacto",
+				body: "Mensaje",
+				sendAt: "Fecha de Evento",
+				sentAt: "fecha de Envio",
+				status: "Stado",
+				actions: "Acciones",
+			},
+			buttons: {
+				add: "Nuevo Evento",
+			},
+			toasts: {
+				deleted: "Agendamento Eliminado con exito.",
+			},
+			},
+			tags: {
+			title: "Etiquetas",
+			confirmationModal: {
+				deleteTitle: "¿Esta seguro de eliminar esta Etiqueta?",
+				deleteMessage: "Esta áccion no puede ser revertida.",
+			},
+			table: {
+				name: "Nombre",
+				color: "Color",
+				tickets: "Registros Etiquetados",
+				actions: "Acciones",
+			},
+			buttons: {
+				add: "Nueva Etiqueta",
+			},
+			toasts: {
+				deleted: "Etiqueta eliminada con exito.",
+			},
 			},
 			settings: {
 				success: "Configuración guardada satisfactoriamente.",
@@ -347,13 +649,19 @@ const messages = {
 				extraInfo: "Otra información",
 			},
 			ticketOptionsMenu: {
+				schedule: "Planificar",
 				delete: "Borrar",
 				transfer: "Transferir",
+				registerAppointment: "Notas de contacto",
+				appointmentsModal: {
+					title: "Observaciónes de Contact",
+					textarea: "Observaciónes",
+					placeholder: "Ingresa los datos que deseas registrar aquí",
+				  },
 				confirmationModal: {
-					title: "¿Borrar ticket #",
+					title: "¿Borrar ticket de contacto",
 					titleFrom: "del contacto ",
-					message:
-						"¡Atención! Todos los mensajes Todos los mensajes relacionados con el ticket se perderán.",
+					message:"¡Atención! Todos los mensajes Todos los mensajes relacionados con el ticket se perderán.",
 				},
 				buttons: {
 					delete: "Borrar",

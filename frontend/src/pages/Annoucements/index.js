@@ -196,7 +196,7 @@ const Announcements = () => {
       return "Média";
     }
     if (val === 3) {
-      return "Baixa";
+      return "Baja";
     }
   };
 

@@ -271,7 +271,7 @@ const AnnouncementModal = ({ open, onClose, announcementId, reload }) => {
                       >
                         <MenuItem value={1}>Alta</MenuItem>
                         <MenuItem value={2}>Média</MenuItem>
-                        <MenuItem value={3}>Baixa</MenuItem>
+                        <MenuItem value={3}>Baja</MenuItem>
                       </Field>
                     </FormControl>
                   </Grid>

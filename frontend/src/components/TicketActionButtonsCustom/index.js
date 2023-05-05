@@ -139,7 +139,7 @@ const TicketActionButtonsCustom = ({ ticket, tagAdded, setTagAdded, selecteds, o
 								style={{ color: 'red' }}
 							/>
 						}
-						label="pendência"
+						label="Pendiente"
 						labelPlacement="start"
 
 					/>

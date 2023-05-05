@@ -143,10 +143,10 @@ const Login = () => {
 						</Grid>
 					</Grid> */}
 				</form>
-			<span className={classes.rodape}>Experimente nossa versão mobile</span>
+			{/* <span className={classes.rodape}>Experimente nossa versão mobile</span> */}
 			</div>
 			<br/>
-			<span className={classes.powered}>@Powered by Proxigma(2023).</span>
+			<span className={classes.powered}>@Powered by Goweb(2023).</span>
 			<Box mt={8}>{/* <Copyright /> */}</Box>
 		</Container>
 		</div>
